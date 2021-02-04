@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap');
+
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+@mixin position{
+    text-align: center;
+    margin: auto;
+}
+
+@mixin position-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-style($fz,$color,$ff){
+    font-size: $fz;
+    color: $color;
+    font-family: $ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:90%;
+    margin: auto;
+    background: #f7f7f7;
+}
+
+/*===================================
+                HEADER
+====================================*/
+
+header{
+    background: url(../img/titel-bild.jpg) center/ cover no-repeat;
+    @include position-flex;
+    h1{
+        padding: 49vh 0px;
+        @include text-style( 2em ,white, 'Open Sans' sans-serif)
+    }
+}
+
+/*===================================
+            INFO-TEXT
+====================================*/
+
+.info{
+    padding: 30vh 0px;
+    @include position-flex;
+    .info-box{
+        width:40%;
+        @include position;
+        h2{
+            font-size: 2.3em;
+        }
+        p{
+            padding: 10px 10px;
+        }
+    }
+}
+
+/*===================================
+            INFO-IMG
+====================================*/
+
+.info-img{
+    padding: 10vh 0px;
+    text-align: center;
+}
+
+/*===================================
+            MEET-ARTIST
+====================================*/
+
+.meet{
+    padding: 10vh 0px;
+    width:45%;
+    @include position;
+    h2{
+        font-size: 2.3em;
+        padding: 10px;
+    }
+}
+
+/*===================================
+        GALLERY + SINGLE IMG
+====================================*/
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    img{
+        width: 100%;
+    }
+}
+
+.single{
+    padding: 2vh 0px;
+    text-align: center;
+}
+
+/*===================================
+            LAST-SECTION
+====================================*/
+
+.last{
+    width: 50%;
+    padding: 25vh 0px;
+    @include position;
+    h2{
+        font-size: 3em;
+    }
+}
+
+/*===================================
+            FOOTER
+====================================*/
+
+.footer{
+    padding: 10vh 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div:nth-of-type(2){
+        width:30%;
+        text-align: center;
+    }
+    div:nth-of-type(3){
+        p{
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+/*===================================
+            FOOTER
+====================================*/

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap");
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  background: #f7f7f7;
+}
+
+/*===================================
+                HEADER
+====================================*/
+header {
+  background: url(../img/titel-bild.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  padding: 49vh 0px;
+  font-size: 2em;
+  color: white;
+  font-family: "Open Sans" sans-serif;
+}
+
+/*===================================
+            INFO-TEXT
+====================================*/
+.info {
+  padding: 30vh 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .info-box {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+.info .info-box h2 {
+  font-size: 2.3em;
+}
+.info .info-box p {
+  padding: 10px 10px;
+}
+
+/*===================================
+            INFO-IMG
+====================================*/
+.info-img {
+  padding: 10vh 0px;
+  text-align: center;
+}
+
+/*===================================
+            MEET-ARTIST
+====================================*/
+.meet {
+  padding: 10vh 0px;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+}
+.meet h2 {
+  font-size: 2.3em;
+  padding: 10px;
+}
+
+/*===================================
+        GALLERY + SINGLE IMG
+====================================*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.gallery img {
+  width: 100%;
+}
+
+.single {
+  padding: 2vh 0px;
+  text-align: center;
+}
+
+/*===================================
+            LAST-SECTION
+====================================*/
+.last {
+  width: 50%;
+  padding: 25vh 0px;
+  text-align: center;
+  margin: auto;
+}
+.last h2 {
+  font-size: 3em;
+}
+
+/*===================================
+            FOOTER
+====================================*/
+.footer {
+  padding: 10vh 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer div:nth-of-type(2) {
+  width: 30%;
+  text-align: center;
+}
+.footer div:nth-of-type(3) p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*===================================
+            FOOTER
+====================================*/
+
+/*# sourceMappingURL=main.css.map */
