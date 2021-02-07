@@ -33,6 +33,10 @@ body{
     background: #f7f7f7;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*===================================
                 HEADER
 ====================================*/
@@ -40,12 +44,20 @@ body{
 header{
     background: url(../img/titel-bild.jpg) center/ cover no-repeat;
     @include position-flex;
+    flex-direction: column;
     h1{
-        padding: 49vh 0px;
+        padding: 45vh 0px 30px 0px;
         @include text-style( 2em ,white, 'Open Sans' sans-serif)
+    }
+    img{
+        padding: 0px 0px 42vh 0px;
     }
 }
 
+.fixed-element{
+    position: fixed;
+    right:5%;
+}
 /*===================================
             INFO-TEXT
 ====================================*/
@@ -144,5 +156,39 @@ header{
 }
 
 /*===================================
-            FOOTER
+            Media Querys
 ====================================*/
+
+@media (max-width: 576px){
+    body{
+        text-align: center;
+    }
+    .info-img{
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    .gallery{
+        display: block;
+        img{
+            padding: 0px 0px 20px 0px;
+        }
+    }
+    .single{
+        padding: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .last{
+        font-size: 0.5em;
+    }
+    .footer{
+        display: block;
+        div:nth-of-type(2){
+            margin: auto;
+            padding: 20px 0px;
+        }
+    }
+}
